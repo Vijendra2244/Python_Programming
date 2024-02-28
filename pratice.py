@@ -324,3 +324,64 @@
 # inp = input("Enter one sentence = ")
 # print(countWordNumber(inp))
 
+
+
+# 28/02/24
+
+# Write a Python program that takes a string as input and counts the number of vowels and consonants in it.
+
+# def count_vowels_and_consonants(string):
+#     vowels_str = "aeiouAEIOU"
+#     vowels_count = 0
+#     consonants_count = 0
+    
+#     for char in string:
+     
+#         if char.isalpha():
+        
+#             if char in vowels_str:
+#                 vowels_count += 1
+#             else:
+#                 consonants_count += 1
+    
+#     return vowels_count, consonants_count
+
+# # Input from user
+# input_string = input("Enter a string: ")
+# vowels, consonants = count_vowels_and_consonants(input_string)
+# print("Number of vowels:", vowels)
+# print("Number of consonants:", consonants)
+
+
+#Write a Python program that checks if a given year is a leap year or not.
+
+# def checkIsYearLeapOrNot(year):
+#     if( year%4==0 and year%100!=0)  or ( year%400==0):
+#         print("year is leap year")
+#     else:
+#         print("year is not leap year")
+
+
+# checkIsYearLeapOrNot(2024)
+
+# Write a Python program to find the second largest element in a given list of integers.
+
+# def largestNumber(ls):
+#     maxNum = 0
+#     for i in range(0,len(ls)):
+#         if(ls[i]>maxNum):
+#             maxNum=ls[i]
+            
+#     return maxNum
+
+# print(largestNumber([1,2,3,4,5,10]))
+
+# def maxNum(l):
+#    maxNum = max(l)
+#    l.remove(maxNum)
+
+#    secondMax = max(l)
+
+#    return secondMax
+
+# print(maxNum([1,2,3,4,5,6,7,8,9,7,50,45]))
