@@ -385,3 +385,36 @@
 #    return secondMax
 
 # print(maxNum([1,2,3,4,5,6,7,8,9,7,50,45]))
+
+
+
+#  Write a Python program that takes a list as input and reverses it without using any built-in functions or methods.
+
+
+def reverse_list(lst):
+    return lst[::-1]
+
+# Test the function
+original_list = [1, 2, 3, 4, 5]
+reversed_list = reverse_list(original_list)
+print("Original List:", original_list)
+print("Reversed List:", reversed_list)
+
+
+#Write a Python function that takes two strings as input and checks if they are anagrams of each other. Anagrams are words or phrases formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
+
+def is_anagram(str1, str2):
+   
+    str1 = str1.replace(" ", "").lower()
+    str2 = str2.replace(" ", "").lower()
+    
+  
+    return sorted(str1) == sorted(str2)
+
+# Test the function
+string1 = "listen"
+string2 = "silent"
+if is_anagram(string1, string2):
+    print(f"'{string1}' and '{string2}' are anagrams.")
+else:
+    print(f"'{string1}' and '{string2}' are not anagrams.")
