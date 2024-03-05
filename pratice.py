@@ -391,30 +391,54 @@
 #  Write a Python program that takes a list as input and reverses it without using any built-in functions or methods.
 
 
-def reverse_list(lst):
-    return lst[::-1]
+# def reverse_list(lst):
+#     return lst[::-1]
 
-# Test the function
-original_list = [1, 2, 3, 4, 5]
-reversed_list = reverse_list(original_list)
-print("Original List:", original_list)
-print("Reversed List:", reversed_list)
+# # Test the function
+# original_list = [1, 2, 3, 4, 5]
+# reversed_list = reverse_list(original_list)
+# print("Original List:", original_list)
+# print("Reversed List:", reversed_list)
 
 
 #Write a Python function that takes two strings as input and checks if they are anagrams of each other. Anagrams are words or phrases formed by rearranging the letters of a different word or phrase, typically using all the original letters exactly once.
 
-def is_anagram(str1, str2):
+# def is_anagram(str1, str2):
    
-    str1 = str1.replace(" ", "").lower()
-    str2 = str2.replace(" ", "").lower()
+#     str1 = str1.replace(" ", "").lower()
+#     str2 = str2.replace(" ", "").lower()
     
   
-    return sorted(str1) == sorted(str2)
+#     return sorted(str1) == sorted(str2)
 
-# Test the function
-string1 = "listen"
-string2 = "silent"
-if is_anagram(string1, string2):
-    print(f"'{string1}' and '{string2}' are anagrams.")
-else:
-    print(f"'{string1}' and '{string2}' are not anagrams.")
+# # Test the function
+# string1 = "listen"
+# string2 = "silent"
+# if is_anagram(string1, string2):
+#     print(f"'{string1}' and '{string2}' are anagrams.")
+# else:
+#     print(f"'{string1}' and '{string2}' are not anagrams.")
+
+
+#Write a Python function that takes a list of integers from 1 to n (inclusive) with one missing number and returns the missing number.
+
+# def missingNumber(lst):
+#     n = len(lst) + 1
+#     missingNumberFormula = n * (n + 1) // 2
+#     sumList = sum(lst)
+#     return missingNumberFormula - sumList
+
+# # Input list from user
+# listOfNumbers = list(map(int, input("Enter list (space-separated numbers): ").split()))
+
+# print("Missing number:", missingNumber(listOfNumbers))
+
+
+#Write a Python program that takes a list as input and removes all duplicates, preserving the original order of elements.
+
+# def removeDuplicate(lst):
+#     removeNum = set(lst)
+#     return removeNum
+# listOfNumbers = list(map(int, input("Enter list (space-separated numbers): ").split()))
+# print("new number:", removeDuplicate(listOfNumbers))
+
