@@ -442,3 +442,24 @@
 # listOfNumbers = list(map(int, input("Enter list (space-separated numbers): ").split()))
 # print("new number:", removeDuplicate(listOfNumbers))
 
+#  Write a Python program that takes a string as input and reverses the order of words in it. For example, if the input string is "hello world", the output should be "world hello".
+
+# def reverseString(string):
+#      splitStr = string.split()
+#      reversedWord = splitStr[::-1]
+#      reversStr = " ".join(reversedWord)
+#      return reversStr
+# inputStr = input("Enter string here = ")
+
+# print(reverseString(inputStr))
+
+# Write a Python function that takes two integers as input, base and exponent, and calculates the power of the base raised to the exponent.
+
+def expo(base, expo):
+    return base ** expo
+
+
+baseValue = int(input("Enter base value =  "))
+expoValue = int(input("Enter Exponent value = "))
+
+print(expo(baseValue,expoValue))
