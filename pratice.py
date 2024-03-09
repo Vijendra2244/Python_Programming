@@ -455,11 +455,93 @@
 
 # Write a Python function that takes two integers as input, base and exponent, and calculates the power of the base raised to the exponent.
 
-def expo(base, expo):
-    return base ** expo
+# def expo(base, expo):
+#     return base ** expo
 
 
-baseValue = int(input("Enter base value =  "))
-expoValue = int(input("Enter Exponent value = "))
+# baseValue = int(input("Enter base value =  "))
+# expoValue = int(input("Enter Exponent value = "))
 
-print(expo(baseValue,expoValue))
+# print(expo(baseValue,expoValue))
+
+
+## PATTERN PRINTING 
+
+
+ ## * * * * *
+ ## * * * * *
+ ## * * * * *
+ ## * * * * *
+ ## * * * * *
+
+
+# def simplePattern(n):
+#     for i in range(0,n):
+#         for j in range(0,n):
+#             if j <= n :
+#              print("*" ,end = " ")
+#         print(end="\n")    
+
+# simplePattern(5)
+
+
+# def simplePattern(n):
+#     for i in range(1,n+1):
+#         if i >= 1:
+#             for j in range(1,n+1):
+#                 if j <= n :
+#                  print("*",end=" ")
+#             print(end='\n')            
+
+# print(simplePattern(5))
+
+
+## TRIANGLE PATTERN
+
+# def trianglePattern(n):
+#     for i in range(0,n):
+#         for j in range(0,n):
+#             if j<=i:
+#                 print("*", end=" ")
+#         print(end="\n")
+
+
+# trianglePattern(5)
+
+## TRIANGLE PATTERN WITH NUMBERS
+
+# def trianglePattern(n):
+#     for i in range(1,n):
+#         for j in range(1,n):
+#             if j<=i:
+#                 print(j, end=" ")
+#         print(end="\n")
+
+
+# trianglePattern(5)
+
+
+## TRIANGLE PATTERN WITH SAME NUMBERS
+
+# def trianglePattern(n):
+#     for i in range(1,n):
+#         for j in range(1,n):
+#             if j<=i:
+#                 print(i, end=" ")
+#         print(end="\n")
+
+
+# trianglePattern(5)
+
+
+##  REVERSE TRIANGLE PATTERN
+
+# def reverseTriangle(n):
+#     for i  in range(1,n+1):
+#         for j in range(1,n+1):
+#             if j >= i:
+#                 print(j-i+1,end="")
+#         print(end="\n")
+
+# reverseTriangle(5)
+
