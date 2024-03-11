@@ -493,7 +493,7 @@
 #                  print("*",end=" ")
 #             print(end='\n')            
 
-# print(simplePattern(5))
+# simplePattern(5)
 
 
 ## TRIANGLE PATTERN
@@ -544,4 +544,72 @@
 #         print(end="\n")
 
 # reverseTriangle(5)
+
+## half stare pattern
+
+# def pyramid(n):
+#     for i in range(0,n):
+#         for j in range(0,n) :
+#             if j > 0 and j == n - j + i :
+#                 print("*" ,end=" ") 
+#         for j in range(0,n):
+#             if i > j:
+#                 print("*", end=" ")
+#         print(end="\n")
+
+# pyramid(10)
+
+## pyramid 
+
+# def pyramid(n):
+#     for i in range(0,n):
+#         for j in range(0,n):
+#            if j == n - i  or i > 0  and j > n-i :
+#              print("*", end = " ")
+#            else :
+#                print(" ",end=" ")       
+#         for j in range(0,n):
+#             if i >= j:
+#                 print("*", end=" ")
+#         print(end="\n")
+
+# pyramid(5)
+
+# def reverse_pyramid(n):
+#     for i in range(n, 0, -1):
+#         for j in range(0, n - i):
+#             print(" ", end=" ")
+#         for j in range(0, 2 * i - 1):
+#             print("*", end=" ")
+#         print()
+
+# reverse_pyramid(5)
+
+
+## rhombous pattern
+
+def rhombous(n):
+     for i in range(0,n):
+        for j in range(0,n):
+           if j == n - i  or i > 0  and j > n-i :
+             print("*", end = " ")
+           else :
+               print(" ",end=" ")       
+        for j in range(0,n):
+            if i >= j:
+                print("*", end=" ")
+        print(end="\n")
+     for i in range(n - 2, -1, -1):
+        for j in range(0, n):
+            if j == n - i - 1 or i < n - 1 and j < n - i - 1:
+                print(" ", end=" ")
+            else:
+                print("*", end=" ")
+        for j in range(0, n):
+            if i >= j:
+                print("*", end=" ")
+        print()
+
+
+rhombous(5)
 
