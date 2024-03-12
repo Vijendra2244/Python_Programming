@@ -588,28 +588,71 @@
 
 ## rhombous pattern
 
-def rhombous(n):
-     for i in range(0,n):
+# def rhombous(n):
+#      for i in range(0,n):
+#         for j in range(0,n):
+#            if j == n - i  or i > 0  and j > n-i :
+#              print("*", end = " ")
+#            else :
+#                print(" ",end=" ")       
+#         for j in range(0,n):
+#             if i >= j:
+#                 print("*", end=" ")
+#         print(end="\n")
+#      for i in range(n - 2, -1, -1):
+#         for j in range(0, n):
+#             if j == n - i - 1 or i < n - 1 and j < n - i - 1:
+#                 print(" ", end=" ")
+#             else:
+#                 print("*", end=" ")
+#         for j in range(0, n):
+#             if i >= j:
+#                 print("*", end=" ")
+#         print()
+
+
+# rhombous(5)
+
+
+
+# def pyramid(n):
+#     for i in range(0,n):
+#         for j in range(0,n):
+#            if j >= (n-1) - i :
+#              print("*", end = " ")
+#            else :
+#                print(" ",end=" ")
+#         for j in range(0,n):
+#             if i > j:
+#                 print("*", end=" ")
+#         print(end="\n")
+
+# pyramid(10)
+
+
+## pattern
+
+# def ptr(n):
+#     for i in range(0,n):
+#         for j in range(0,n):
+#             if i >= j :
+#                 print("*",end=" ")
+#         print(end="\n")
+#     for i in range(0,n):
+#         for j in range(0,n):
+#             if j > i :
+#                 print("*",end=" ")
+#         print(end="\n")
+
+# ptr(4)
+
+## 2nd pattern
+
+def trey(n):
+    for  i in range(0,n):
         for j in range(0,n):
-           if j == n - i  or i > 0  and j > n-i :
-             print("*", end = " ")
-           else :
-               print(" ",end=" ")       
-        for j in range(0,n):
-            if i >= j:
-                print("*", end=" ")
+            if i >= j :
+                print(j , end=" ")
         print(end="\n")
-     for i in range(n - 2, -1, -1):
-        for j in range(0, n):
-            if j == n - i - 1 or i < n - 1 and j < n - i - 1:
-                print(" ", end=" ")
-            else:
-                print("*", end=" ")
-        for j in range(0, n):
-            if i >= j:
-                print("*", end=" ")
-        print()
 
-
-rhombous(5)
-
+trey(5)
