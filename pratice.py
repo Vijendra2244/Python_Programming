@@ -648,11 +648,74 @@
 
 ## 2nd pattern
 
-def trey(n):
-    for  i in range(0,n):
-        for j in range(0,n):
-            if i >= j :
-                print(j , end=" ")
-        print(end="\n")
+# def trey(n):
+#     start = 1
+#     for  i in range(0,n):
+#         if i % 2 == 0 : 
+#             start = 1
+#         else :
+#             start = 0
+#         for j in range(0,n):
+#             if j <= i :
+#                 print(start,end=" ")
+#                 start  = 1-start
+#         print(end="\n")
 
-trey(5)
+# trey(5)
+
+##pattern 
+
+# 1                                 1 
+# 1 2                             2 1
+# 1 2 3                         3 2 1 
+# 1 2 3 4                     4 3 2 1 
+# 1 2 3 4 5                 5 4 3 2 1 
+# 1 2 3 4 5 6             6 5 4 3 2 1 
+# 1 2 3 4 5 6 7         7 6 5 4 3 2 1 
+# 1 2 3 4 5 6 7 8     8 7 6 5 4 3 2 1 
+# 1 2 3 4 5 6 7 8 9 9 8 7 6 5 4 3 2 1 
+ 
+# def simplePattern(n):
+#     for i in range(1,n):
+#         for j in range(1,n):
+#             if i >= j :
+#                 print(j,end=" ")
+#             else :
+#                 print(" ",end=" ")
+#         for j in range(1,n):
+#             if j == n- i or i >= 1 and j > n-i :
+#                 print(n-j,end=" ")
+#             else :
+#                 print(" ",end=" ")
+#         print(end="\n")  
+
+# simplePattern(10)
+
+
+# def numPattern(n):
+#     for i in range(1,n):
+#         for j in range(1,n):
+#             if i >=j :
+#                 print(j*i,end=" ")
+#         print(end="\n")
+
+# numPattern(5)
+
+import time
+
+def custom_random():
+    # Get current time in milliseconds
+    current_time_ms = int(time.time() * 1000)
+    print(current_time_ms)
+    # Use last few digits of the milliseconds as the seed
+    seed = current_time_ms % 10000
+    print(seed)
+    # Ensure the generated number is 4 digits by adding leading zeros if necessary
+    random_num = str(seed).zfill(4)
+ 
+    return random_num
+
+# Example usage
+random_number = custom_random()
+print("Random 4-digit number:", random_number)
+
