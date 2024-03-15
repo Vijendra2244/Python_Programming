@@ -701,21 +701,36 @@
 
 # numPattern(5)
 
-import time
+# import time
 
-def custom_random():
-    # Get current time in milliseconds
-    current_time_ms = int(time.time() * 1000)
-    print(current_time_ms)
-    # Use last few digits of the milliseconds as the seed
-    seed = current_time_ms % 10000
-    print(seed)
-    # Ensure the generated number is 4 digits by adding leading zeros if necessary
-    random_num = str(seed).zfill(4)
+# def custom_random():
+#     # Get current time in milliseconds
+#     current_time_ms = int(time.time() * 1000)
+#     print(current_time_ms)
+#     # Use last few digits of the milliseconds as the seed
+#     seed = current_time_ms % 10000
+#     print(seed)
+#     # Ensure the generated number is 4 digits by adding leading zeros if necessary
+#     random_num = str(seed).zfill(4)
  
-    return random_num
+#     return random_num
 
-# Example usage
-random_number = custom_random()
-print("Random 4-digit number:", random_number)
+# # Example usage
+# random_number = custom_random()
+# print("Random 4-digit number:", random_number)
 
+
+
+# arr = [1,2,3,4,5]
+
+# for i in range(0,len(arr)):
+#     print(i,end=" ")
+
+def solve(x,arr):
+  #write Code
+  flage  = "No"
+  for i in range(x):
+      for j in range(x):
+          if i != j and arr[j] == arr[i] * 2 :
+             flage = "Yes"
+  print(flage)
